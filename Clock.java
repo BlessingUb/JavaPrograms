@@ -10,7 +10,7 @@ class Clock {
         DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("HH:mm");
         
         String formattedTime = currentTime.format(myFormatObj);
-        System.out.println("The current" + ANSI_RED + " time" + ANSI_RESET + " is " + formattedTime );
+        System.out.printf("The current" + ANSI_RED + " time" + ANSI_RESET + " is %s%n", formattedTime );
     }
     
 }
